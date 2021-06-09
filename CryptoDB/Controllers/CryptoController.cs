@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CryptoDB.Controllers
 {
-    [Microsoft.AspNetCore.Components.Route("api/[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class CryptoController : ControllerBase
     {

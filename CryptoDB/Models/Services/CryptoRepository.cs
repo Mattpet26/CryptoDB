@@ -26,9 +26,8 @@ namespace CryptoDB.Models.Services
                 Name = crytoDTO.Name,
                 Price = crytoDTO.Price,
                 WeekPrice = crytoDTO.WeekPrice,
-                //CryptoBooks = crytoDTO.CryptoBooks
             };
-            _context.Entry(crypto).State = Microsoft.EntityFrameworkCore.EntityState.Added;
+            _context.Entry(crypto).State = EntityState.Added;
             await _context.SaveChangesAsync();
             return crypto;
         }
@@ -72,7 +71,6 @@ namespace CryptoDB.Models.Services
                 Name = cryptoDTO.Name,
                 Price = cryptoDTO.Price,
                 WeekPrice = cryptoDTO.WeekPrice,
-                //CryptoBooks = crytoDTO.CryptoBooks
             };
             _context.Entry(crypto).State = EntityState.Modified;
             await _context.SaveChangesAsync();

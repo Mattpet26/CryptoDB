@@ -14,6 +14,5 @@ namespace CryptoDB.Models.API
         public string DayPrice { get; set; }
         public string WeekPrice { get; set; }
 
-        public List<CryptoBook> CryptoBooks { get; set; }
     }
 }

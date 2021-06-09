@@ -67,6 +67,8 @@ namespace CryptoDB
             });
 
             services.AddTransient<IUserService, IdentityUserService>();
+            services.AddTransient<IBook, BookRepository>();
+            services.AddTransient<ICryptoCurrency, CryptoRepository>();
 
 
             //services.AddTransient<IAbility, AbilityRepository>();
@@ -79,7 +81,7 @@ namespace CryptoDB
             {
                 options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo()
                 {
-                    Title = "Custom Characters",
+                    Title = "CryptoWebApp",
                     Version = "v1"
                 });
             });

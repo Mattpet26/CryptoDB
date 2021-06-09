@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -13,7 +14,7 @@ namespace CryptoDB.Models
         public string HourPrice { get; set; }
         public string DayPrice { get; set; }
         public string WeekPrice { get; set; }
-
+        [BindProperty]
         public List<CryptoBook> CryptoBooks { get; set; }
     }
 }
